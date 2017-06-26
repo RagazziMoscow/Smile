@@ -1,0 +1,115 @@
+.header {
+  position: relative;
+  &__logo {
+    position: relative;
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 5px;
+      width: 100%;
+      background-color: black;
+      opacity: 0.3;
+    }
+  }
+  &__text {
+    position: absolute;
+    top: 36%;
+    right: 8.7%;
+    z-index: 4;
+    max-width: 710px;
+    font-family: "PT Sans", Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    &__title {
+      display: block;
+      font-family: 'RaleWay Thin';
+      font-size: 220px;
+      line-height: 180px;
+      letter-spacing: 21px;
+    }
+    &__subtitle {
+      display: block;
+      margin: 0;
+      font-family: 'RaleWay Bold';
+      font-size: 61px;
+    }
+
+
+  }
+  &__quotes {
+    position: absolute;
+    top: 6%;
+    left: 11.2%;
+    height: 80px;
+    width: 200px;
+    background-color: #000;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat Bold';
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: bold;
+    text-align: center;
+    & p {
+      margin: 0;
+      letter-spacing: 7px;
+    }
+  }
+
+}
+
+@media (max-width: 850px) {
+  .header {
+    &__text {
+      &__title {
+        font-size: 150px;
+      }
+      &__subtitle {
+        font-size: 44px;
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .header {
+    &__text {
+      &__title {
+        font-size: 100px;
+      }
+      &__subtitle {
+        margin: -50px 0 0 -25px;
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    &__text {
+      top: 20%;
+      right: 2.5%;
+      &__title {
+        display: inline;
+        font-size: 50px;
+      }
+      &__subtitle {
+        display: none;
+      }
+    }
+  }
+}
+
+
+

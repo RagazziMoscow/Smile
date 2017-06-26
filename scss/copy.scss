@@ -1,0 +1,26 @@
+.copy {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  background-image: url('../img/hands.png');
+  background-size: auto 100%;
+  opacity: 0.8;
+  text-align: center;
+  color: #fff;
+  &__align {
+    height: 45%;
+  }
+  &__content {
+    margin: 0 auto 70px auto;
+    font-family: 'RaleWay Bold';
+    font-size: 60px;
+  }
+  &__author {
+    font-family: 'RaleWay Regular';
+    font-size: 20px;
+    & span {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.main-menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  width: 100%;
+  z-index: 4;
+  background-color: #000;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; 
+  &__list {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Montserrat Regular';
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 80px;
+
+    & a {
+      color: #626262;
+      text-decoration: none;
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/*Меню*/
+.seen {
+  bottom: 0;
+  & .main-menu {
+    &__list {
+      display: block;
+    }
+  }
+}
+
+
+  .touch-menu {
+    height: 35px;
+    width: 55px;
+    position: absolute;
+    top: 6%;
+    right: 13%;
+    z-index: 5;
+    cursor: pointer;
+    text-align: center;
+    &__divide {
+      height: 4px;
+      background-color: #fff;
+      width: 100%;
+      margin: 5px 0;
+    }
+    &__text {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: 'Montserrat Bold';
+      font-size: 15px;
+      letter-spacing: 3px;
+    }
+    &_close {
+      width: 80px;
+      &__content {
+        height: 38px;
+        background-image: url('../img/close.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+  }
+@media (max-width: 1100px) {
+  .main-menu {
+    &__list {
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+}
+@media (max-width: 850px) {
+  .main-menu {
+    &__list {
+      font-size: 30px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .main-menu {
+    &__list {
+      top: 6%;
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .main-menu {
+    &__list {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  } 
+}
+
+@media (max-width: 360px) {
+  .main-menu {
+    &__list {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Smile</title>
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+  <div id="wrapper">
+    <section class="header" id="header">
+      <div class="header__logo">
+        <img src="img/header-logo.png" alt="logo" class="header__logo__img">      
+      </div>
+      <div class="header__quotes" style="display:none;">
+        <p>Quotes</p>
+      </div>
+      <div class="header__text">
+        <span class="header__text__title">Smile</span>
+        <span class="header__text__subtitle">it costs you nothing</span>
+      </div>
+      <div class="header__touch-menu touch-menu">
+
+        <div class="touch-menu_close" v-if="seen" v-on:click="toggleMenu">
+          <div class="touch-menu_close__content"></div>
+          <span class="touch-menu__text">close</span>
+        </div>
+        <div class="touch-menu_show" v-else v-on:click="toggleMenu">
+          <div class="touch-menu__divide"></div>
+          <span class="touch-menu__text">menu</span>
+          <div class="touch-menu__divide"></div>
+        </div>
+
+      </div>
+      <nav class="main-menu" v-bind:class="{seen: seen}">
+          <ul class="main-menu__list">
+            <li class="main-menu__list__item"><a href="#">home</a></li>
+            <li class="main-menu__list__item"><a href="#">about us</a></li>
+            <li class="main-menu__list__item"><a href="#">Categories</a></li>
+            <li class="main-menu__list__item"><a href="#">gallery</a></li>
+            <li class="main-menu__list__item"><a href="#">events</a></li>
+            <li class="main-menu__list__item"><a href="#">blog</a></li>
+            <li class="main-menu__list__item"><a href="#">contact us</a></li>
+          </ul>
+      </nav>
+    </section>
+    <section class="info">
+      <div class="info__title">
+        <p class="info__title__description">The most inclusive</p>
+        <p class="info__title__text">Free PSD Template</p>
+        <p class="info__title__content">
+          Free for commercial and personal use.
+          You can easily edit its contents and code it for yourself or your client!
+        </p>
+      </div>
+      <span class="info__separate"></span>
+      <div class="info__content">
+        <p class="info__content__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Donec eget nisi eget tortor iaculis tristique. 
+          Aliquam tincidunt posuere tortor hendrerit elementum. 
+          Nunc laoreet lorem a sem auctor fringilla. Pellentesque dignissim accumsan lobortis. 
+          Sed pharetra erat vitae dui imperdiet quis commodo orci dapibus. 
+          <br/><br/>
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+          Fusce at nunc libero. Nam metus lorem, rhoncus ac mattis ornare, blandit vel risus.
+        </p>
+      </div>
+    </section>
+    <section class="slogan">
+      <div class="slogan__content">
+        <p class="slogan__content__text">
+          I love people who make me laugh.
+          I honestly think it’s the thing I like most, to laugh. It cures a multitude of ills.
+          It's probably the most important thing in a person. 
+        </p>
+        <p class="slogan__content__autor">Audrey Hepburn</p>
+      </div>
+      <div class="slogan__photo"></div>
+    </section>
+    <section class="reasons">
+      <div class="reasons__content">
+        <h1 class="reasons__title">
+          Reasons to be happy
+        </h1>
+        <span class="reasons__separate"></span>
+        <div class="reasons__list">
+          <div class="reasons__list__item">
+            <div class="reason">
+              <p class="reason__title">you are alive</p>
+              <p class="reason__content">
+                Waking up to see another day is a blessing. Don't take it for granted. Make it count and be happy that you're alive.
+              </p>
+              <p class="reason__author">Anonymous</p>
+            </div>
+          </div>
+          <div class="reasons__list__item">
+            <div class="reason">
+              <p class="reason__title">someone loves you</p>
+              <p class="reason__content">
+                Someone who really loves you sees what a mess you can be, how moody you can get, how hard you are to handle, but still wants you in their life.
+              </p>
+              <p class="reason__author">Anonymous</p>
+            </div>
+          </div>
+          <div class="reasons__list__item">
+            <div class="reason">
+              <p class="reason__title">Enjoy the moment</p>
+              <p class="reason__content">
+                Sometimes you will never know the true value of a moment until it becomes a memory. 
+              </p>
+              <p class="reason__author">Anonymous</p>
+            </div>
+          </div>
+          <div class="reasons__list__item">
+            <div class="reason">
+              <p class="reason__title">health is wealth</p>
+              <p class="reason__content">
+                It is health that is real wealth and not pieces of gold and silver. 
+              </p>
+              <p class="reason__author">Mahatma Gandhi</p>
+            </div>
+          </div>
+        </div>
+        <div class="reasons__excerpt button-click">
+          <p>more reasons</p>
+        </div>
+
+      </div>
+    </section>
+    <section class="copy">
+      <div class="copy__align">
+        <h1 class="copy__content">
+          I love you for all that you are, all that you have been, 
+          and all you're yet to be.
+        </h1>
+        <p class="copy__author">
+          Quote of the day, from <span>Love Quotes</span>
+        </p>        
+      </div>
+    </section>
+    <section class="prints" style="display:none;">
+      <h1 class="prints__title">
+        Buy Poster Prints
+      </h1>
+      <span class="prints__separate"></span>
+      <div class="prints__content">
+        <div class="prints__left prints__block print"></div>
+        <div class="prints__right prints__block">
+          <div class="prints__right__top print"></div>
+          <div class="prints__right__bottom">
+            <div class="prints__right__bottom__right print"></div>
+            <div class="prints__right__bottom__left print"></div>
+          </div>
+        </div>
+      </div>
+      <div class="prints__excerpt excerpt">
+        <p>browse posters</p>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer__menu menu">
+        <div class="menu__item">
+          <p class="menu__item__title">browse</p>
+          <ul class="menu__item__links">
+            <li class="menu__item__links__item"><a href="#">Home</a></li>
+            <li class="menu__item__links__item"><a href="#">About Us</a></li>
+            <li class="menu__item__links__item"><a href="#">Categories</a></li>
+            <li class="menu__item__links__item"><a href="#">Info</a></li>
+            <li class="menu__item__links__item"><a href="#">Services</a></li>
+          </ul>
+        </div>
+        <div class="menu__item">
+          <p class="menu__item__title">shop</p>
+          <ul class="menu__item__links">
+            <li class="menu__item__links__item"><a href="#">Account</a></li>
+            <li class="menu__item__links__item"><a href="#">Help & Guide</a></li>
+            <li class="menu__item__links__item"><a href="#">Shipping & Returns</a></li>
+            <li class="menu__item__links__item"><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="menu__item">
+          <p class="menu__item__title">contact</p>
+          <ul class="menu__item__links">
+            <li class="menu__item__links__item">Phone: + 01 234 567 890</li>
+            <li class="menu__item__links__item">Fax: + 01 234 567 890</li>
+            <li class="menu__item__links__item">graphicsfuel@gmail.com</li>
+          </ul>
+        </div>
+        <div class="menu__item">
+          <p class="menu__item__title">Subscribe now</p>
+          <form class="menu__item__content" action="" method="POST">
+            <p>Get our latest news and product updates daily</p>
+            <input class="menu__item__content__input" type="text" placeholder="Email Address">
+            <button id="button-submit" class="button-click" type="submit"><p>submit</p></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__info">
+        <p class="footer__info__text">
+          2016 © Copyright - Quotes PSD Templates. All rights reserved.
+        </p>
+        <ul class="footer__info__links links">
+          <li class="links__item"><img src="" alt=""></li>
+          <li class="links__item"><img src="" alt=""></li>
+          <li class="links__item"><img src="" alt=""></li>
+          <li class="links__item"><img src="" alt=""></li>
+          <li class="links__item"><img src="" alt=""></li>
+          <li class="links__item"><img src="" alt=""></li>
+          <li class="links__item"><img src="" alt=""></li>
+          <li class="links__item"><img src="" alt=""></li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <script type="text/javascript" src="js/vue.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+
+</body>
+</html>

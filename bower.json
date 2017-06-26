@@ -1,0 +1,20 @@
+{
+  "name": "smile",
+  "authors": [
+    "Ilya <iliya5376@mail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-scss": "^3.0.3"
+  }
+}

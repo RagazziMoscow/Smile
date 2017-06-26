@@ -1,0 +1,43 @@
+
+@import '../bower_components/normalize-scss/_normalize.scss';
+@import 'fonts';
+@import 'wrapper';
+@import 'header';
+@import 'menu';
+@import 'info';
+@import 'slogan';
+@import 'reasons';
+@import 'copy';
+@import 'prints';
+@import 'footer';
+@import 'media';
+
+
+
+/*Кнопки*/
+
+  .button-click, .button_submit {
+    display: table;
+    padding: 21px 36px;
+    margin: 0 auto 140px auto;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    &:hover {
+      background-color: #f6f6f6;
+    }
+    & p {
+      margin: 0;
+      font-family: 'Montserrat Bold';
+      font-size: 20px;
+      color: #000;
+      line-height: 15px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+  }
+

@@ -1,0 +1,49 @@
+.reasons {
+  padding: 0 100px 0 100px;
+  &__content {
+
+  }
+  &__title {
+    margin: 135px 0 40px 0;
+    font-family: 'RaleWay Bold';
+    font-size: 60px;
+  }
+  &__separate {
+    height: 2px;
+    width: 80px;
+    float: left;
+    display: block;
+    background-color: #000;
+  }
+  &__list {
+    margin: 100px 0 62px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item {
+      flex-basis: 40%;
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding: 50px;
+      border: 1px solid rgb(234, 233, 231);
+    }
+  }
+
+}
+
+.reason {
+  &__title {
+    font-family: 'RaleWay Bold';
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  &__content {
+    font-family: 'RaleWay Medium';
+    font-size: 20px;
+  }
+  &__author {
+    font-family: 'RaleWay Regular';
+    font-size: 20px;
+  }
+}

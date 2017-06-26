@@ -1,0 +1,15 @@
+{
+  "name": "smile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "1312"
+  },
+  "keywords": [
+    "1312"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
