@@ -1,26 +1,101 @@
 .copy {
   width: 100%;
   height: 650px;
+  position: relative;
   display: flex;
   align-items: center;
-  background-image: url('../img/hands.png');
-  background-size: auto 100%;
   opacity: 0.8;
   text-align: center;
   color: #fff;
+  background-image: url('../img/hands.png');
+  background-repeat: no-repeat;
+  background-position: center;
   &__align {
+    position: relative;
     height: 45%;
   }
   &__content {
+
+    width: 100%;
     margin: 0 auto 70px auto;
     font-family: 'RaleWay Bold';
     font-size: 60px;
   }
   &__author {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     font-family: 'RaleWay Regular';
     font-size: 20px;
     & span {
       text-decoration: underline;
+    }
+  }
+  &__photo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    height: auto;
+  }
+}
+@media (orientation: landscape) {
+  .copy {
+    background-size: 100% auto;
+  }
+}
+
+@media (orientation: portrait) {
+  .copy {
+    background-size: auto 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .copy {
+    
+      &__content {
+        margin-bottom: 40px;
+        font-size: 40px;
+      }
+    
+  }
+}
+
+@mdeia (max-width: 940px) {
+  .copy {
+    
+      &__content {
+        margin-bottom: 20px;
+        font-size: 36px;
+      }
+    
+  }
+}
+@media (max-width: 700px) {
+  .copy {
+    &__content {
+      font-size: 32px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .copy {
+    &__content {
+      font-size: 28px;
+    }
+    &__author {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .copy {
+    &__content {
+      font-size: 23px;
     }
   }
 }

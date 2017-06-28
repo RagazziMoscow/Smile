@@ -24,11 +24,11 @@
       </div>
       <div class="header__touch-menu touch-menu">
 
-        <div class="touch-menu_close" v-if="seen" v-on:click="toggleMenu">
+        <div class="touch-menu_close" v-show="seen" v-on:click="toggleMenu">
           <div class="touch-menu_close__content"></div>
           <span class="touch-menu__text">close</span>
         </div>
-        <div class="touch-menu_show" v-else v-on:click="toggleMenu">
+        <div class="touch-menu_show" v-show="!seen" v-on:click="toggleMenu">
           <div class="touch-menu__divide"></div>
           <span class="touch-menu__text">menu</span>
           <div class="touch-menu__divide"></div>
@@ -79,7 +79,7 @@
         </p>
         <p class="slogan__content__autor">Audrey Hepburn</p>
       </div>
-      <div class="slogan__photo"></div>
+      <img class="slogan__photo" src="img/autor.png" alt="cekavo">
     </section>
     <section class="reasons">
       <div class="reasons__content">
@@ -132,6 +132,7 @@
       </div>
     </section>
     <section class="copy">
+    <!-- <img src="img/hands.png" alt="" class="copy__photo"> -->
       <div class="copy__align">
         <h1 class="copy__content">
           I love you for all that you are, all that you have been, 

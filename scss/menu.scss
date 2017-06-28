@@ -66,13 +66,19 @@
       font-size: 15px;
       letter-spacing: 3px;
     }
+    &_show {
+      position: absolute;
+      top: 15px;
+    }
     &_close {
       width: 80px;
       &__content {
-        height: 38px;
-        background-image: url('../img/close.png');
+        margin-bottom: 13px;
+        height: 45px;
+        background-image: url("../img/close.png");
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: center bottom;
+        background-size: auto 42px;
       }
     }
   }

@@ -1,7 +1,6 @@
 
 @import '../bower_components/normalize-scss/_normalize.scss';
 @import 'fonts';
-@import 'wrapper';
 @import 'header';
 @import 'menu';
 @import 'info';
@@ -13,6 +12,13 @@
 @import 'media';
 
 
+html {
+  background-color: #fff;
+}
+#wrapper {
+  /*max-width: 1600px;*/
+  margin: 0 auto;
+}
 
 /*Кнопки*/
 
@@ -41,3 +47,12 @@
     }
   }
 
+
+@media (max-width: 490px) {
+  .button-click {
+    padding: 14px 27px;
+    & p {
+      font-size: 14px;
+    }
+  }
+}
